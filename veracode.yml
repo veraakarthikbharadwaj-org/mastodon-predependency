@@ -4,7 +4,5 @@ actions:
     bundle: 2.5.7
   veracode_static_scan:
     build:
-      runs_on:
-      packager_image: veracode/scm-packaging:3.0.0
       predependency_command: |
         gem pristine --all --only-executables
